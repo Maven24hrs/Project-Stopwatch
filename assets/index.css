@@ -1,0 +1,75 @@
+/* Basic Page Layout */
+body {
+  font-family: "Poppins", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: red;
+  margin: 0;
+  color: #fff;
+}
+
+.container {
+  text-align: center;
+  background-color: rgb(255, 255, 31);
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 0 15px rgb(0, 0, 0)
+}
+
+.title {
+  margin-bottom: 20px;
+  letter-spacing: 2px;
+}
+
+.timer {
+  font-size: 3rem;
+  font-weight: bold;
+  letter-spacing: 3px;
+  background: #ff3640;
+  padding: 20px 40px;
+  border-radius: 10px;
+  display: inline-block;
+  margin-bottom: 20px;
+  }
+
+/* Buttons */
+.buttons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+button {
+  background-color: #00ffcc;
+  border: none;
+  color: #d9ff00;
+  font-size: 1rem;
+  padding: 10px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  background-color: #201e94;
+  transform: scale(1.05);
+}
+
+button:disabled {
+  background-color: #555;
+  cursor: not-allowed;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  .timer {
+    font-size: 2rem;
+    padding: 15px 30px;
+  }
+  button {
+    font-size: 0.9rem;
+    padding: 8px 16px;
+  }
+}
